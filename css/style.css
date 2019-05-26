@@ -1,0 +1,31 @@
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.btn-group-vertical > label {
+    margin-bottom: 10px !important;
+    max-height: 40px !important;
+}
+
+.dropdown {
+    /*      padding: 20px !important; */
+}
+
+.containerTop {
+    display: flex;
+    padding: 20px !important;
+}
+
+.fixed {
+    width: 800px;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+#errorMsg{
+  display:block;          
+  height:30px;
+}

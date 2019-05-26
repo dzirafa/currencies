@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Exchange chart</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- My custom styles  -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 align="center">Select exchange rate</h1>
+    <div class="containerTop text-center">
+        <div class="fixed containerTop">
+            <div class="dropdown">
+                From
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    From
+                </button>
+                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu1" id="currencyFrom">
+                    <h6 class="dropdown-header">Please select</h6>
+                </div>
+            </div>
+            <div class="dropdown">
+                to
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    To
+                </button>
+                <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenu2" id="currencyTo">
+                    <h6 class="dropdown-header">Please select</h6>
+                </div>
+            </div>
+        </div>
+        <div class="shadow p-3 mb-5 bg-white rounded flex-item">
+            <p>Real time exchange rates</p>
+            <p class="font-weight-bold" id="exchangeRate">Loading data...</p>
+            <hr/>
+            <div class="text-right"><span id="labelFrom">From</span>
+                <a class="btn btn-sm px-3 btn-primary" id="btnSwap" href="#" role="button"><img src="img/swap.png" height="20"></a>
+                <span id="labelTo">To</span></div>
+
+        </div>
+    </div>
+
+    <div class="text-center" id="errorMsg">
+    </div>
+    
+    
+    <div class="containerTop text-center">
+        <div class="container text-center my-4">
+            <canvas id="lineChart"></canvas>
+        </div>
+        
+        <div id="timeButtons" class="btn-group btn-group-toggle btn-group-vertical" data-toggle="buttons">
+            <label class="btn btn-primary form-check-label active">
+                <input class="form-check-input" type="radio" name="options" id="option1" value="12h" autocomplete="off" checked> 12h
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option2" value="1D" autocomplete="off"> 1D
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option3" value="1W" autocomplete="off"> 1W
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option4" value="1M" autocomplete="off"> 1M
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option5" value="1Y" autocomplete="off"> 1Y
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option6" value="2Y" autocomplete="off"> 2Y
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option7" value="5Y" autocomplete="off"> 5Y
+            </label>
+            <label class="btn btn-primary form-check-label">
+                <input class="form-check-input" type="radio" name="options" id="option8" value="10Y" autocomplete="off"> 10Y
+            </label>
+        </div>
+    </div>
+   
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Stocks JavaScript -->
+    <script type="text/javascript" src="js/stocks.js"></script>
+    <!-- My JavaScript -->
+    <script type="text/javascript" src="js/kainos.js"></script>
+</body>
+
+</html>
